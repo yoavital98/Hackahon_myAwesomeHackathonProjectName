@@ -182,5 +182,5 @@ def find_isolated_bubbles():
 # ---------------------------------your code-----------------------------------
 # -----------------------------------------------------------------------------
 def find_bubble_location_in_grid(bullet_bubble):
-    # TODO: implement
+    # finding the closest empty bubble and return its row,col
     pass
