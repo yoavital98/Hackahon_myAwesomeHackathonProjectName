@@ -85,6 +85,12 @@ def is_isolated_inner(bubbles_grid, bubble_location, locations_checked):
 # ---------------------------------your code-----------------------------------
 # -----------------------------------------------------------------------------
 
+def calcDistBetween2Bubbles(bubble, bullet_bubble):
+    return 1
+
 def should_stop(bubbles_grid, bullet_bubble):
-    # TODO: implement
-    pass
+    for row in bubbles_grid:
+        for bubble in row:
+            if calcDistBetween2Bubbles(bubble, bullet_bubble) < 2*consts.BUBBLE_RADIUS:
+                return True
+    return False
