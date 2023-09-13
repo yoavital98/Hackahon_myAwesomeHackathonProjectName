@@ -86,5 +86,6 @@ def is_isolated_inner(bubbles_grid, bubble_location, locations_checked):
 # -----------------------------------------------------------------------------
 
 def should_stop(bubbles_grid, bullet_bubble):
-    # TODO: implement
-    pass
+    for row in bubbles_grid:
+        for bubble in row:
+            return True
